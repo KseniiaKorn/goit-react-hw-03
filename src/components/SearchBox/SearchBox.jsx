@@ -1,10 +1,11 @@
 import React from "react";
+import s from './SearchBox.module.css'
 
 const SearchBox = ({value, onChange}) => {
     return (
-        <div>
-            <label>Find contacts by name
-                <input
+        <div className={s.wrapper}>
+            <label className={s.label}>Find contacts by name
+                <input className={s.input}
                     type="text"
                     value={value}
                     onChange={onChange}
